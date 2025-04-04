@@ -1,7 +1,8 @@
 from flask import Flask, request
 import requests
+import os
 
-API_KEY = "f6d1b4dbacc4354090a9504d91db369d" # change this to be an environment variable
+API_KEY = os.getenv("FLIGHT_API_KEY") 
 
 app = Flask(__name__)
 
